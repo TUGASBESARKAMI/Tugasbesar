@@ -4,7 +4,7 @@ public class Lingkungan_ruang extends Model {
 	String hasil;
 
 	public void Lingkungan() {
-		identitas();
+		//identitas();
 		System.out.print("Masukkan kondisi lantai   [Bersih/tidak] : ");
 		setKondisi_lantai(in.next());
 		System.out.print("Masukkan kondisi dinding  [Bersih/tidak] : ");

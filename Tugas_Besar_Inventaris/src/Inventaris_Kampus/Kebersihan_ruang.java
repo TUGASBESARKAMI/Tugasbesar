@@ -4,7 +4,7 @@ public class Kebersihan_ruang extends Model {
 	String hasil;
 
 	public void kebersihan() {
-		identitas();
+		//identitas();
 		System.out.print("Masukkan sirkulasi udara       : ");
 		setSirkulasi_udara(in.next());
 		System.out.print("Masukkan nilai pencahayaan     : ");

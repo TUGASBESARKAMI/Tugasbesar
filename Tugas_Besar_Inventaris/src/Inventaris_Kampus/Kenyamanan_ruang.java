@@ -4,7 +4,7 @@ public class Kenyamanan_ruang extends Model {
 	String hasil;
 
 	public void kenyamanan() {
-		identitas();
+		//identitas();
 		System.out.print("Masukkan kebisingan [Bising/Tidak] : ");
 		setKebisingan(in.next());
 		System.out.print("Masukkan bau           [Bau/Tidak] : ");

@@ -4,7 +4,7 @@ public class Keamanan_ruang extends Model {
 	String hasil;
 
 	public void keamanan() {
-		identitas();
+		//identitas();
 		System.out.print("Masukkan kekokohan ruang        [Kokoh/Tidak] : ");
 		setKekokohan(in.next());
 		System.out.print("Masukkan kunci pintu & jendela    [Ada/Tidak] : ");

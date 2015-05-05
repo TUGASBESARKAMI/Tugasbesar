@@ -8,7 +8,7 @@ public class Jml_kondisi_dan_posisi extends Model {
 	String hasil;
 
 	public void jml_kondisi_dan_posisi() {
-		identitas();
+		//identitas();
 		System.out.print("Masukkan jumlah steker                   : ");
 		setJml_steker(in.nextInt());
 		for (a = 0; a < getJml_steker(); a++) {
