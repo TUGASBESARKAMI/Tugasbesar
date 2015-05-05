@@ -18,11 +18,17 @@ public class Tampil {
 		System.out.println("                      INVENTARIS KAMPUS");
 		System.out
 				.println("==============================================================");
+		System.out.println("\n-------------------- KONDISI RUANG KELAS ---------------------\n");
 		call1.kondisi();
+		System.out.println("\n----------- JUMLAH, KONDISI DAN POSISI RUANG KELAS -----------\n");
 		call2.jml_kondisi_dan_posisi();
+		System.out.println("\n------------------- LINGKUNGAN RUANG KELAS -------------------\n");
 		call3.Lingkungan();
+		System.out.println("\n------------------- KEBERSIHAN RUANG KELAS -------------------\n");
 		call4.kebersihan();
+		System.out.println("\n------------------- KENYAMANAN RUANG KELAS -------------------\n");
 		call5.kenyamanan();
+		System.out.println("\n-------------------- KEAMANAN RUANG KELAS --------------------\n");
 		call6.keamanan();
 		System.out
 				.println("\n========================HASIL ANALISIS========================");
