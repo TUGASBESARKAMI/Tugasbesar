@@ -1,22 +1,23 @@
 package Inventaris_Kampus;
 
-public class Kebersihan_ruang extends Model {
+public class Kebersihan_ruang extends Super {
 	String hasil;
+	Model call1= new Model();
 
 	public void kebersihan() {
-		//identitas();
+		identitas();
 		System.out.print("Masukkan sirkulasi udara       : ");
-		setSirkulasi_udara(in.next());
+		call1.setSirkulasi_udara(in.next());
 		System.out.print("Masukkan nilai pencahayaan     : ");
-		setNilai_pencahayaan(in.nextFloat());
+		call1.setNilai_pencahayaan(in.nextFloat());
 		System.out.print("Masukkan kelembapan            : ");
-		setKelembapan(in.nextFloat());
+		call1.setKelembapan(in.nextFloat());
 		System.out.print("Masukkan suhu [celcius]        : ");
-		setSuhu(in.nextFloat());
+		call1.setSuhu(in.nextFloat());
 	}
 
 	String analisis_sirkulasi_udara() {
-		if (getSirkulasi_udara().equalsIgnoreCase("a")) {
+		if (call1.getSirkulasi_udara().equalsIgnoreCase("a")) {
 			hasil = "Sesuai";
 		} else {
 			hasil = "Tidak sesuai";
@@ -25,7 +26,7 @@ public class Kebersihan_ruang extends Model {
 	}
 
 	String analisis_pencahayaan() {
-		if (250 >= getNilai_pencahayaan() && getNilai_pencahayaan() >= 350) {
+		if (250 >= call1.getNilai_pencahayaan() && call1.getNilai_pencahayaan() >= 350) {
 			hasil = "Sesuai";
 		} else {
 			hasil = "Tidak sesuai";
@@ -34,7 +35,7 @@ public class Kebersihan_ruang extends Model {
 	}
 
 	String analisis_kelembapan() {
-		if (70 >= getKelembapan() && getKelembapan() <= 80) {
+		if (70 >= call1.getKelembapan() && call1.getKelembapan() <= 80) {
 			hasil = "Sesuai";
 		} else {
 			hasil = "Tidak sesuai";
@@ -43,7 +44,7 @@ public class Kebersihan_ruang extends Model {
 	}
 
 	String analisis_suhu() {
-		if (25 >= getKelembapan() && getKelembapan() <= 35) {
+		if (25 >= call1.getKelembapan() && call1.getKelembapan() <= 35) {
 			hasil = "Sesuai";
 		} else {
 			hasil = "Tidak sesuai";

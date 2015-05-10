@@ -412,17 +412,7 @@ public class Model {
 	public void setLogin(String login) {
 		this.login = login;
 	}
-
-	void identitas() {
-		System.out.print("Masukkan nama ruang            : ");
-		setNama_ruang(in.next());
-		System.out.print("Masukkan lokasi ruang          : ");
-		setLokasi_ruang(in.next());
-		System.out.print("Masukkan fakultas              : ");
-		setFakultas(in.next());
-	}
-
-	double hitung_luas() {
-		return getPanjang_ruang() * getLebar_ruang();
-	}
 }
+
+
+//class model dan identitas dipisah

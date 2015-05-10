@@ -1,24 +1,25 @@
 package Inventaris_Kampus;
 
-public class Kenyamanan_ruang extends Model {
+public class Kenyamanan_ruang extends Super {
 	String hasil;
-
+	Model call1= new Model();
+	
 	public void kenyamanan() {
-		//identitas();
+		identitas();
 		System.out.print("Masukkan kebisingan [Bising/Tidak] : ");
-		setKebisingan(in.next());
+		call1.setKebisingan(in.next());
 		System.out.print("Masukkan bau           [Bau/Tidak] : ");
-		setBau(in.next());
+		call1.setBau(in.next());
 		System.out.print("Masukkan kebocoran   [Bocor/Tidak] : ");
-		setKebocoran(in.next());
+		call1.setKebocoran(in.next());
 		System.out.print("Masukkan kerusakan   [Rusak/tidak] : ");
-		setKerusakan(in.next());
+		call1.setKerusakan(in.next());
 		System.out.print("Masukkan keausan       [Aus/tidak] : ");
-		setKeausan(in.next());
+		call1.setKeausan(in.next());
 	}
 
 	String analisis_kebisingan() {
-		if (getKebisingan().equalsIgnoreCase("tidak")) {
+		if (call1.getKebisingan().equalsIgnoreCase("tidak")) {
 			hasil = "Sesuai";
 		} else {
 			hasil = "Tidak sesuai";
@@ -27,7 +28,7 @@ public class Kenyamanan_ruang extends Model {
 	}
 
 	String analisis_bau() {
-		if (getBau().equalsIgnoreCase("tidak")) {
+		if (call1.getBau().equalsIgnoreCase("tidak")) {
 			hasil = "Sesuai";
 		} else {
 			hasil = "Tidak sesuai";
@@ -36,7 +37,7 @@ public class Kenyamanan_ruang extends Model {
 	}
 
 	String analisis_kebocoran() {
-		if (getKebocoran().equalsIgnoreCase("tidak")) {
+		if (call1.getKebocoran().equalsIgnoreCase("tidak")) {
 			hasil = "Sesuai";
 		} else {
 			hasil = "Tidak sesuai";
@@ -45,7 +46,7 @@ public class Kenyamanan_ruang extends Model {
 	}
 
 	String analisis_kerusakan() {
-		if (getKerusakan().equalsIgnoreCase("tidak")) {
+		if (call1.getKerusakan().equalsIgnoreCase("tidak")) {
 			hasil = "Sesuai";
 		} else {
 			hasil = "Tidak sesuai";
@@ -54,7 +55,7 @@ public class Kenyamanan_ruang extends Model {
 	}
 
 	String analisis_keausan() {
-		if (getKeausan().equalsIgnoreCase("tidak")) {
+		if (call1.getKeausan().equalsIgnoreCase("tidak")) {
 			hasil = "Sesuai";
 		} else {
 			hasil = "Tidak sesuai";
