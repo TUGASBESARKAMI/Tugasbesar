@@ -2,16 +2,15 @@ package Inventaris_Kampus;
 
 import java.util.Scanner;
 
-public class Super {
-	Model call = new Model();
+public class Super extends Model {
 	Scanner in = new Scanner(System.in);
-	
-	void identitas() {
+	void identitas(){
+		System.out.println('\n'+"------------------- IDENTITAS RUANG KELAS --------------------"+'\n');
 		System.out.print("Masukkan nama ruang            : ");
-		call.setNama_ruang(in.next());
+		setNama_ruang(in.next());
 		System.out.print("Masukkan lokasi ruang          : ");
-		call.setLokasi_ruang(in.next());
+		setLokasi_ruang(in.next());
 		System.out.print("Masukkan fakultas              : ");
-		call.setFakultas(in.next());
+		setFakultas(in.next());
 	}
 }
